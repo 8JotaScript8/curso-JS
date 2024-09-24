@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo2</title>
+    <link rel="stylesheet" href="style/ex15.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+       <div>
+        <p>Ano de nascimento:
+             <input type="number" name="txtano" id="txtano" min="0">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked> Masculino
+            <input type="radio" name="radsex" id="fem"> Feminino
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+        <p id="imagem" style="display: none;">
+            <img src="link homem.jpg" alt="fttst">
+        </p>
+       </div>
+       <div id="res">
+            Preencha os dados acima para Verificar
+       </div>
+       
+        
+    </section>
+    <footer>
+        <p>&copy;JotaScript</p>
+    </footer>
+    <script src="script/ex15.js"></script>
+</body>
+</html>

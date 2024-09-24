@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jenniferbody7</title>
+</head>
+<body>
+    <h1>Vc é estrangeiro?</h1>
+    Sua nacionalidade <input type="text" name="txtNac" id="txtNac">
+    <input type="button" value="Analisar" onclick="Verificar()">
+    <div id="res"></div>
+
+    <script>
+        function Verificar() {
+            var txtnc = document.getElementById('txtNac')
+            var res = document.getElementById('res')
+            var nacionalidade = txtnc.value
+            res.innerHTML = `vc é ${nacionalidade}?`
+
+            if (nacionalidade.toLowerCase() != 'Brasileiro') {
+                res.innerHTML += '<br>Vc é estrangeiro'
+            } else{
+                res.innerHTML += '<br>vc é br'
+            }
+
+
+        }
+    </script>
+</body>
+</html>

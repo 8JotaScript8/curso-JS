@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Escolha(1 a 100): <input type="number" name="txtn" id="txtn">
+                <input type="button" value="Adicionar" onclick="Adicionar()">
+            </p>   
+            
+        </div>
+        <div>
+            <p><select name="dados" id="selectdados" size="10"></select>
+                <input type="button" value="Analisar" onclick="Analisar()">
+            </p>
+
+        </div>
+        <div id="res">
+
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy;JotaScript</p>
+    </footer>
+
+    <script src="Script.js"></script>
+
+
+    
+</body>
+</html>

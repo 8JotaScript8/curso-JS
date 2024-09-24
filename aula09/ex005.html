@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jenniferbody3</title>
+    <style>
+        body{
+            font: 15pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM, rigth?</h1>
+    <p>Lets go!</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript </p>
+    <div id= 'msg'> Clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var body = window.document.body
+        window.document.write(`replicando o primeiro paragrafo: ${p1.innerText}<br>`)
+        window.document.write(`replicando o segundo paragrafo: ${p2.innerHTML}`)
+        p1.style.color = 'red'
+        body.style.background = 'purple'
+        var dyv = window.document.querySelector('div#msg')
+        dyv.style.background = 'red'
+
+    </script>
+    
+</body>
+</html>
